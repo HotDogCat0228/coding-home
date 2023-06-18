@@ -12,7 +12,7 @@
     transition: .5s width;
 }
 .home-slogn{
-    background-image: url('../../../assets/images/bg_home.jpg');
+    background-image: url('../../assets/images/bg_home.jpg');
     height: 534px;
     background-size: cover;
     background-position:center;
@@ -149,19 +149,19 @@
     }
 }
 .feature-card:nth-child(1){
-    background-image: url('../../../assets/images/info01.jpg');
+    background-image: url('../../assets/images/info01.jpg');
     
 }
 .feature-card:nth-child(2){
-    background-image: url('../../../assets/images/info02.jpg');
+    background-image: url('../../assets/images/info02.jpg');
     
 }
 .feature-card:nth-child(3){
-    background-image: url('../../../assets/images/info03.jpg');
+    background-image: url('../../assets/images/info03.jpg');
     
 }
 .feature-card:nth-child(4){
-    background-image: url('../../../assets/images/info04.jpg');
+    background-image: url('../../assets/images/info04.jpg');
     
 }
 .article-card{
