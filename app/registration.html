@@ -1,0 +1,100 @@
+---
+title: 程式家教
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 進度條 -->
+<section class="bg-main pt-144 pb-4">
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-7 timeline">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 col-md-5">
+        <div class="timeline-pointer text-center step-1 active">
+          <p>課程報名</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-2">
+        <div class="timeline-pointer text-center step-2">
+          <p>信用卡付款</p>
+        </div>
+      </div>
+      <div class="col-3 col-md-5">
+        <div class="timeline-pointer text-center step-3">
+          <p>付款成功</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container pt-12 pb-144">
+    <div class="row">
+        <div class="col-md-9 offset-md-3">
+          <!-- 浮動區塊 -->
+          <div class="sign-form-chat position-absolute d-flex flex-column align-items-center mb-md-0 mb-xxs-12 ">
+            <img src="./assets/images/teacher01.jpg" class="mb-6" alt="">
+            <h3 class="fz-18 text-primary mb-1">2022 Python 全攻略｜從入門到實務</h3>
+            <p class="text-custom mb-2">前端語言</p>
+            <p class="text-primary">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+            <div class="square-box position-absolute"></div>
+          </div>
+            <div class="sign-form bg-main position-relative">
+                <h2 class="text-center text-primary fs-2 mb-12">課程報名</h2>
+                <div class="sign-form-content ps-md-115 ps-xxs-8">
+                <h3 class="text-primary fz-18 mb-2 text-xxs-center text-md-start">選擇付款方式</h3>
+                <ul class="d-flex mb-8 flex-md-row flex-xxs-column">
+                    <div class="d-flex mb-md-0 mb-xxs-2 w-100">
+                      <li class="w-100 me-md-0 me-xxs-1"><button type="button" class="btn btn-main me-md-4 me-xxs-0 w-100 p-xxs-4">信用卡付款</button></li>
+                      <li class="w-100"><button type="button" class="btn btn-main me-md-4 me-xxs-0 w-100  p-xxs-4">超商繳款</button></li>
+                    </div>
+                    <div class="d-flex w-100">
+                      <li class="w-100 me-md-0 me-xxs-1"><button type="button" class="btn btn-main me-md-4 me-xxs-0 w-100  p-xxs-4">ATM轉帳</button></li>
+                      <li class="w-100"><button type="button" class="btn btn-main  me-xxs-0  w-100 p-xxs-4">12期分期付款</button></li>
+                    </div>
+                </ul>
+                <h3 class="text-primary text-md-start text-xxs-center fz-18 mb-6">訂單資訊</h3>
+                <div class="d-flex flex-xxs-column flex-md-row mb-6">
+                    <div class="me-12 w-100  mb-md-0 mb-xxs-4">
+                        <label for="exampleFormControlInput1" class="form-label text-primary">姓名</label>
+                        <input type="email" class="form-control bg-main w-100" id="exampleFormControlInput1" placeholder="請輸入姓名">
+                    </div>
+                    <div class="w-100">
+                        <label for="exampleFormControlInput1" class="form-label text-primary">電話</label>
+                        <input type="email" class="form-control bg-main" id="exampleFormControlInput1" placeholder="請輸入電話號碼">
+                    </div>
+                </div>
+                <div class="w-100 mb-md-6 mb-xxs-4">
+                    <label for="exampleFormControlInput1" class="form-label text-primary">Email</label>
+                    <input type="email" class="form-control bg-main" id="exampleFormControlInput1" placeholder="請輸入Email">
+                </div>
+                <div class="d-flex mb-6 flex-xxs-column flex-md-row">
+                    <div class="me-12 w-100 mb-md-0 mb-xxs-4">
+                        <label for="select-data" class="form-label text-primary">課程</label>
+                        <select class="form-select text-primary bg-main w-100" aria-label="Default select example" id="select-data">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="w-100">
+                        <label for="exampleFormControlInput1" class="form-label text-primary">想預約的日期</label>
+                        <button type="button" class="btn btn-main text-primary d-block pt-2 pb-2 w-100 rounded-1">請選擇日期</button>
+                    </div>
+                </div>
+                <div class="w-100 mb-6">
+                    <label for="input-area" class="form-label text-primary">上課地點</label>
+                    <input type="email" class="form-control bg-main" id="input-area" placeholder="請輸入上課地點">
+                </div>
+                <div class="d-flex flex-xxs-column flex-md-row align-items-md-center justify-content-md-between">
+                    <p class="fz-18 text-primary text-xxs-start mb-md-0 mb-xxs-6">NT$1600</p>
+                    <button type="button" class="btn btn-custom text-primary border-0 pt-2 pb-2 pe-12 ps-12 rounded-3" onclick="location.href='cash.html';">前往結賬</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

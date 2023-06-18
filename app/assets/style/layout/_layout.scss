@@ -1,0 +1,77 @@
+
+// layout-header
+.home-header{
+    padding: 24px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    // position: fixed;
+}
+.home-footer{
+    padding: 24px 0;
+}
+.font-code{
+    font-family: $code-font;
+}
+// 標題設置
+.logo{
+    width: 174px;
+    height: 42px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+// 客製化線條顏色
+.border-custom{
+    border-image: linear-gradient(to right, #62DB54, #09ACF5);
+    border-image-slice: 1;
+}
+#login-modal{
+    @media (min-width: 576px){
+        .modal-dialog {
+        max-width: 100%;
+        margin: 1.75rem auto;
+        }
+    }
+}
+.login-container{
+    width: 52%;
+    margin: 0 auto;
+}
+@media (max-width: 768px){
+    .login-container {
+    width: 100%;
+    }
+}
+.login-header{
+    .title-box{
+        width: 32px;
+        height: 32px;
+    }
+    .btn-close{
+        margin: 0;
+    }
+}
+.w-32{
+    width: 32px;
+    height: 32px;
+}
+.line{
+    top:12px;
+    z-index: 1;
+}
+.line-text{
+    left:33%;
+    z-index: 2;
+}
+.layout-mobile-menu{
+    display: none;
+}
+@media(max-width:768px){
+    .layout-menu{
+        display: none !important;
+    }
+    .layout-mobile-menu{
+        display: block;
+    }
+}
