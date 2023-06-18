@@ -1,10 +1,35 @@
----
-title: 程式家教
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>程式家教</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    
+    <header class="home-header bg-main border-bottom border-custom">
+      <nav class="d-flex justify-content-between align-items-center container">
+        <h1 class="mb-0"><a href="#" class="logo"><img src="./assets/images/logo.svg" alt="">Coding Home</a></h1>
+        <ul class="layout-menu mb-0 d-flex list-unstyled">
+          <li class="me-12"><a href="#" class="fz-18">首頁</a></li>
+          <li class="me-12"><a href="./course.html" class="fz-18">課程介紹</a></li>
+          <li class=""><a href="#" class="fz-18 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login-modal"><span class="material-symbols-outlined d-block">
+            person
+            </span>登入</a></li>
+        </ul>
+        <div class="layout-mobile-menu">
+          <span class="material-symbols-outlined text-custom">
+            menu
+          </span>
+        </div>
+      </nav>
+    </header>
+    
 <!-- slogn -->
 <section class="pt-md-80 pb-md-80 pt-xxs-0 pb-xxs-0 container">
   <div class="home-slogn row d-flex align-items-center">
@@ -376,3 +401,57 @@ current: index
     </div>
     </div>
 </section>
+
+    <footer class="home-footer bg-main">
+      <nav>
+        <p class="font-code text-primary text-center mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </nav>
+    </footer>
+<!-- Modal -->
+
+  <div class="modal fade" id="login-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-6">
+            <div class="modal-content bg-main border-primary">
+              <!-- header -->
+              <div class="modal-header login-header border-0 d-flex justify-content-between">
+                <div class="title-box"></div>
+                <h2 class="login-title text-primary mb-0">登入</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- content -->
+              <div class="modal-body d-flex flex-column align-items-center">
+                <div class="login-container m-xxs-0">
+                  <label class="text-primary mb-1" for="email"><p>信箱</p></label>
+                  <input type="text" id="email" class="bg-black form-control text-primary mb-6" placeholder="請輸入信箱">
+                  <label class="text-primary mb-1" for="email"><p>密碼</p></label>
+                  <input type="text" id="email" class="bg-black form-control text-primary mb-6" placeholder="請輸入密碼">
+                  <button type="button" class="btn btn-custom text-primary border-0 w-100 mb-12 pt-2 pb-2">登入</button>
+                  <div class="text-primary position-relative mb-8">
+                  <p class="line-text position-absolute bg-main">其他登入方式</p>
+                  <div class="line position-absolute border border-bottom z-index-1055 w-100"></div>
+                  </p>
+                  </div>
+                  <button type="button" class="btn btn-main text-primary w-100 pt-2 pb-2 mb-6 d-flex align-items-center "><img src="./assets/images/icon_fb.svg" alt="" class="w-32 me-12">Facebook 登入</button>
+                  <button type="button" class="btn btn-main text-primary w-100 pt-2 pb-2 d-flex align-items-center"><img src="./assets/images/icon_google.svg" class="w-32  me-12" alt="">Google 登入</button>
+                </div>
+              </div>
+              <!-- footer -->
+              <div class="modal-footer border-0">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
